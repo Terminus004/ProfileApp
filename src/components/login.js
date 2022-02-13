@@ -29,7 +29,6 @@ export default class Login extends Component {
       },
     })
       .then((res) => {
-        console.log(res.data.uid);
         alert(res.data.message);
         if (res.data.uid !== null) {
           localStorage.setItem('uid', res.data.uid);
